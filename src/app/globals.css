@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --color-text-dark: #2E2E2E;
+  --color-text-muted: #6B6B6B;
+  --color-primary-blue: #0B5ED7;
+  --color-primary-dark-blue-start: #0A3D91;
+  --color-primary-dark-blue-end: #0B5ED7;
+  --color-background-cream: #F3F0E4;
+  --color-background-light-yellow: #FBF5B7;
+  --color-background-dark-brown: #4B2E24;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: white;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .container-custom {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .text-center {
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .gap-2 {
+    gap: 0.5rem;
+  }
+
+  .gap-8 {
+    gap: 2rem;
+  }
+
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .md\:flex {
+      display: flex;
+    }
+  }
+}
