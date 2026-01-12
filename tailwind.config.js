@@ -16,6 +16,16 @@ module.exports = {
         'background-cream': '#F3F0E4',
         'background-light-yellow': '#FBF5B7',
         'background-dark-brown': '#4B2E24',
+        // Bloom Branding Color Palette
+        'midnight-blue': '#081F5C', // Primary/Dominant - Hero background
+        'royal-blue': '#1E3A8A',
+        'moon': '#F5F1E8', // Base/Canvas - About section background
+        'porcelain': '#F8F6F0',
+        'jicama': '#FAF9F5',
+        'china': '#B8D4E3', // Secondary Support - Soft blues
+        'sky': '#C8E0ED',
+        'dawn': '#D4E8F0',
+        'asian-pear': '#E8F5A0', // Accent - Small highlights only
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
